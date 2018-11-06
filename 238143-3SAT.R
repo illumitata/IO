@@ -95,7 +95,7 @@ for(i in clause_sizes) {
         clauses_vectorized <- load_clauses_to_a_vector(paste(path, paste(i, paste("/", paste(j, ".cnf", sep=""), sep=""), sep=""), sep=""))
         algorithm_running_time <- system.time(rbga.bin(size = length(unique(abs(clauses_vectorized))), popSize = 200, iters = 100,
                                     mutationChance = 0.05, elitism = T, evalFunc = fitness3SAT))[1]
-        running_time_summarized <- running_time_summarized + algorithm_running_time # "system.time" jest wektorem[?], który zawiera w sobie 3 wyniki, 1 pozycja to v_time uzytkownika
+        running_time_summarized <- running_time_summarized + algorithm_running_time # "system.time" jest wektorem[?], który zawiera w sobie 3 wyniki, 1 pozycja to czas uzytkownika
     }
     average_time <- running_time_summarized / 3.0 # dzielenie przez liczbę iteracji (przykładów dla danego rozmiaru formuły)
     times <- c(times, average_time)
