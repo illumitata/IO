@@ -1,0 +1,30 @@
+c This Formular was created for testing purposes
+c
+c    horn? no
+c    forced? no
+c    mixed sat? no
+c    clause length = 3
+c
+p cnf
+-3	11	14
+6	2	12
+13	7	3
+4	14	1
+9	5	15
+16	20	6
+7	-11	10
+-15	8	18
+19	-1	17
+10	20	13
+29	-40	24
+21	32	-37
+28	-34	1
+31	6	22
+26	-39	16
+-33	23	10
+-36	21	9
+4	-38	27
+25	-35	31
+19	23	30
+%
+0
